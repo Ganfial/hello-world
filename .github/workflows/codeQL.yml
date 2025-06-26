@@ -16,11 +16,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
-          config-file: hello-world/.github/codeql/codeql-config.yml
+          config-file: ./.github/codeql/codeql-config.yml
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
